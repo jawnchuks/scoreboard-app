@@ -13,10 +13,10 @@ import HorseRacing from './HomeComponents/HorseRacing/HorseRacing';
 
 
 const navigation = [
-    { name: 'Soccer', href: 'soccer', current: true },
-    { name: 'Basket Ball', href: 'basketball', current: false },
-    { name: 'Tennis', href: 'tennis', current: false },
-    { name: 'Horse Racing', href: 'horse-racing', current: false },
+    { name: 'Soccer', href: 'soccer', active: true },
+    { name: 'Basket Ball', href: 'basketball', active: false },
+    { name: 'Tennis', href: 'tennis', active: false },
+    { name: 'Horse Racing', href: 'horse-racing', active: false },
   ]
 
   function classNames(...classes) {
@@ -38,10 +38,10 @@ const Home = () => {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'text-white' : 'text-gray-300 hover:text-white',
+                          item.active ? 'text-white' : 'text-gray-300 hover:text-white',
                           'px-3 py-2  text-md font-medium'
                         )}
-                        aria-current={item.current ? 'location' : undefined}
+                        aria-current={item.active ? 'location' : undefined}
                       >
                         {item.name}
                       </a>

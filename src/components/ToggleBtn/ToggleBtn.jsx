@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 function Switch() {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
   return (
     <>
       <div class="flex"
         onClick={() => {
-            setToggle(!toggle);
+            setToggle(toggle);
             console.log('clicked!')
           }}>
   

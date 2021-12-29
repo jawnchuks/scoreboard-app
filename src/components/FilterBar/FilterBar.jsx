@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
 import ToggleBtn from '../ToggleBtn/ToggleBtn';
 import Dropdown from '../Dropdown/Dropdown';
@@ -8,7 +8,7 @@ const FilterBar = () => {
 
     return (
 
-        <div className="flex justify-between flex-end mt-2 mb-2">
+        <div className="flex flex-wrap justify-between flex-end mt-2 mb-2">
 
                 {/* date picker */} 
                 <div className="date">

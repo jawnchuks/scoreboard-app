@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 
 
 const Picker = () => {
 
-    const [date, setDate] = useState(new Date());
+    // const [date, setDate] = useState(new Date());
 
     return (
         <div>
